@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: Ben Cooling
+  description: Install Node from NodeSource & any other user defined packages from apt-get for Debian/Ubuntu.
+  license: license (GPLv2, CC-BY, etc)
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - utopic
+    - vivid
+  galaxy_tags:
+  - web
+  - nodejs
+  - node
+  - Ubuntu
+  - debian
+  - apt-get
+dependencies: []

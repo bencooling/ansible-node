@@ -1,0 +1,14 @@
+---
+- name: Download setup for nodejs
+  get_url: url=https://deb.nodesource.com/setup_{{ version }} dest=/tmp/installer.sh mode=0440
+- name: Install setup for nodejs
+  sudo: true
+  command: /bin/bash /tmp/installer.sh
+- name: install nodejs
+  apt: pkg=nodejs state=latest
+  sudo: true
+- name: install any other packages
+  apt: pkg={{ item }} state=latest
+  sudo: true
+  with_items:
+    - '{{ apt }}'
