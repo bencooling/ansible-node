@@ -13,7 +13,7 @@ Role Variables
 
 ### version
 Please see [NodeSource Node.js Binary Distributions](https://github.com/nodesource/distributions) for the versions you can install.  
-**default value** 4.x
+**default value** `4.x`
 
 ### apt
 List of packages to install
@@ -29,7 +29,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: bcooling.node, version: 4.x, apt: ['graphicsmagick'] }
+         - { role: bencooling.node, version: 4.x, apt: ['graphicsmagick'] }
 
 License
 -------
